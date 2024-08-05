@@ -1,26 +1,6 @@
 @import url("window_control_placeholder_support.css");
 @import url("hide_tabs_toolbar.css");
 
-/* ================================================================== */
-/* ================================================================== */
-
-/* TABS: height */
-/* :root {
-    --tab-toolbar-navbar-overlap: 0px !important; *//* fix for full screen mode */
-/*    --tab-min-height: 25px !important;
-}
-:root #tabbrowser-tabs {
-    --tab-min-height: 25px !important;
-}
-#TabsToolbar {height: var(--tab-min-height) !important;}
-
-.tab-background {
-    margin-block-end: 0 !important;
-    margin-block-start: 0 !important;
-}
-*/
-
-
 /* ================================ */
 /* Make compact design more compact */
 /* -------------------------------- */
@@ -57,72 +37,3 @@ toolbarseparator[id^='customizableui-special-separator'] {
     margin-top: 6px;
     margin-bottom: 6px;
 }
-
-/* ====================================== */
-/* Make Tabs disappear if Sidebery active */
-/* -------------------------------------- */
-/* Hide the tabs when Sidebery visible */
-/* #main-window[titlepreface*=" "] #TabsToolbar-customization-target {
-    height: 0 !important;
-    overflow: hidden;
-} */
-
-/* Make the application min-maximize-close buttons height match the address bar */
-/* #main-window[titlepreface*=" "] #TabsToolbar .titlebar-buttonbox-container {
-    height: 34px;
-} */
-
-/* Push up the address bar */
-/* #main-window[titlepreface*=" "] #nav-bar {
-    margin-top: -35px;
-} */
-
-/* Reduce width of address bar so app buttons have enought room to appear */
-/* #main-window[titlepreface*=" "] #nav-bar-customization-target {
-    max-width: calc(100vw - 230px);
-}
- */
-/* #main-window[titlepreface*=" "] #tabbrowser-tabs {
-    visibility: collapse;
-} */
-
-
-/* ====================================== */
-/* Make Tabs disappear if Sidebery active  (old versiont) */
-/* -------------------------------------- */
-/*
-#main-window #TabsToolbar {
-    height: 29px !important;
-    overflow: hidden;
-    transition: height .3s .3s !important;
-}
-
-#main-window[titlepreface*=" "] #TabsToolbar {
-    height: 0 !important;
-}
-
-#main-window[titlepreface*=" "] #tabbrowser-tabs {
-    z-index: 0 !important;
-    visibility: collapse;
-}
-*/
-
-
-/* ================================================================== */
-/* Make only Tabs disappear if Sidebery active, not the whole tabbbar */
-/* ------------------------------------------------------------------ */
-/*
-#main-window #tabbrowser-arrowscrollbox #shadow-root {
-    width: 0!important;
-}
-*/
-/*
-#main-window[titlepreface*=" "] .tabbrowser-tab:not([pinned]) {
-    */
-/*
-#main-window[titlepreface*=" "] .tabbrowser-tab {
-    width: 0;
-    display: none;
-    visibility: collapse;
-}
-*/
