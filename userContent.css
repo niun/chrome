@@ -1,0 +1,17 @@
+@-moz-document url-prefix("about:reader") {
+  body.sans-serif {
+    font-family: monospace !important;
+    color: #3fd73f !important;
+  }
+  body.sans-serif a {
+    color: #d8dd00 !important;
+  }
+  body.serif {
+    font-family: "Book Antiqua", "Times New Roman", serif !important;
+  }
+  @media screen { /* Not for printed output */
+    body { /* Dim the background a bit */
+      background-color: #000000 !important;
+    }
+  }
+}
